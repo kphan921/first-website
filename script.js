@@ -1,2 +1,19 @@
-const h2 = document.createElement('h2');
-h2.textContent = "This is freaking awesome feeling"
+// const alert = document.getElementsByClassName('button2');
+
+// function clickAlert() {
+//     alert('Click click!');
+// }
+
+// alert.addEventListener('click', clickAlert)
+
+function addingEventListener() {
+    const input = document.getElementsByClassName('button2');
+
+    function clickAlert() {
+        alert('Click!');
+    }
+
+    input.addEventListener('click', clickAlert); 
+}
+
+input.addEventListener('click', addingEventListener);
