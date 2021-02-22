@@ -23,3 +23,16 @@ div {
   padding: 6px;
   min-height: 50px;
 }
+
+.container {
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.button {
+	cursor: pointer;
+}

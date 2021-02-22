@@ -15,3 +15,14 @@ function changeBackground() {
 const button2 = document.getElementById('button2');
 
 button2.addEventListener('click', e => { alert('Click! Click!')});
+
+const button = document.querySelector('.button');
+const container = document.querySelector('.container');
+const code = document.querySelector('h3');
+
+button.addEventListener("click", e => {
+    color = '#';
+    color += Math.random().toString(16).slice(2, 8);
+    code.innerText = color;
+    container.style.backgroundColor = color;
+})
