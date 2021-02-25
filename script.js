@@ -41,7 +41,9 @@ form.addEventListener('submit', (e) => {
   btn.style.height = '20px'
   btn.style.fontSize = '10px'
   btn.style.background = 'red';
+  btn.style.cursor = 'pointer';
   li.appendChild(btn);
+  e.target['new-task-description'].value = '';
   btn.addEventListener('click', (e) => {
     e.target.parentElement.remove(li);
   })
