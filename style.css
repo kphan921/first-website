@@ -16,13 +16,27 @@ body {
 	}
 }
 
-div {
+#button1 {
   width: 200px;
   font-family: Gotham Rounded, sans-serif;
   border: 1px solid rgb(10, 0, 0);
   padding: 6px;
-  min-height: 50px;
+  min-height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
+
+#button2 {
+	width: 200px;
+	font-family: Gotham Rounded, sans-serif;
+	border: 1px solid rgb(10, 0, 0);
+	padding: 6px;
+	min-height: 30px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+  }
 
 .container {
 	height: 200px;
@@ -36,3 +50,25 @@ div {
 .button {
 	cursor: pointer;
 }
+
+#main-content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 1px solid #333;
+	background: rgba(255, 255, 255, 0.3);
+	padding: 15px 20px 18px 18px;
+	border-radius: 5px;
+	box-shadow: 2px 5px 5px #333;
+  }
+  
+  #list {
+	margin: 10px;
+	border: 1px solid #333;
+	background: rgba(255, 255, 255, 0.75);
+	padding: 15px 20px 18px 18px;
+	border-radius: 5px;
+	box-shadow: 2px 5px 5px #333;
+  }

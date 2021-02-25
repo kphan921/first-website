@@ -26,3 +26,23 @@ button.addEventListener("click", e => {
     code.innerText = color;
     container.style.backgroundColor = color;
 })
+
+form = document.querySelector('#create-task-form');
+let commentContainer = document.querySelector('#tasks')
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let li = document.createElement('li') 
+  li.textContent= e.target['new-task-description'].value;
+  commentContainer.appendChild(li);
+  btn = document.createElement('button');
+  btn.textContent = 'X';
+  btn.style.width = '20px' 
+  btn.style.height = '20px'
+  btn.style.fontSize = '10px'
+  btn.style.background = 'red';
+  li.appendChild(btn);
+  btn.addEventListener('click', (e) => {
+    e.target.parentElement.remove(li);
+  })
+})
