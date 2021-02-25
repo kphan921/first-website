@@ -3,10 +3,8 @@ const body = document.querySelector('body');
 
 button1.addEventListener('click', changeBackground);
 
-// setTimeout(() => {
-//     button1.removeEventListener('click', changeBackground)
-// }, 2000)
 
+// CHANGE BACKGROUND
 function changeBackground() {
     body.style.background = "linear-gradient(to right, white, red)";
 }
@@ -20,6 +18,7 @@ const button = document.querySelector('.button');
 const container = document.querySelector('.container');
 const code = document.querySelector('h3');
 
+// CHANGE COLOR AND GET COLOR CODE
 button.addEventListener("click", e => {
     color = '#';
     color += Math.random().toString(16).slice(2, 8);
@@ -30,6 +29,7 @@ button.addEventListener("click", e => {
 form = document.querySelector('#create-task-form');
 let commentContainer = document.querySelector('#tasks')
 
+// ADD TASK TO TODO LIST
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   let li = document.createElement('li') 
