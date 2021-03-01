@@ -58,8 +58,11 @@ const showCar = (car) => {
   carList.append(image, carName, carModel, carYear,carCost);
 }
 
+const carForm = document.querySelector('.car-form');
 
-
+carForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+});
 
 
 const button1 = document.getElementById('button1');
@@ -90,11 +93,11 @@ button.addEventListener("click", e => {
     container.style.backgroundColor = color;
 })
 
-form = document.querySelector('#create-task-form');
+toDoForm = document.querySelector('#create-task-form');
 let commentContainer = document.querySelector('#tasks')
 
 // ADD TASK TO TODO LIST
-form.addEventListener('submit', (e) => {
+toDoForm.addEventListener('submit', (e) => {
   e.preventDefault();
   let li = document.createElement('li') 
   li.textContent= e.target['new-task-description'].value;
