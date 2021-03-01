@@ -1,6 +1,6 @@
 const cars = [
   {
-    imgUrl: 'http://jdm-expo.com/17353/nissan-skyline-sale.jpg',
+    imgUrl: 'https://www.wallpapertip.com/wmimgs/51-510574_nissan-skyline-gtr-r34.jpg',
     make: 'Nissan Skyline',
     model: 'Skyline',
     year: '1999',
