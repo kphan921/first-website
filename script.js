@@ -83,7 +83,7 @@ button2.addEventListener('click', e => { alert('Click! Click!')});
 
 const button = document.querySelector('.button');
 const container = document.querySelector('.container');
-const code = document.querySelector('h3');
+const code = document.querySelector('.color');
 
 // CHANGE COLOR AND GET COLOR CODE
 button.addEventListener("click", e => {
